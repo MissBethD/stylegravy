@@ -1,0 +1,524 @@
+/* =============================================================================
+   Global
+   ========================================================================== */
+/*
+================================================================================
+ *
+ Non-semantic helper classes -------------
+ Please define your styles before this section.
+ *
+================================================================================
+ */
+/* For image replacement */
+/*
+================================================================================
+ *
+ Print styles -------------
+ Inlined to avoid required HTTP connection: h5bp.com/r
+ *
+================================================================================
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+audio, canvas, video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden], template {
+  display: none;
+}
+html {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html, button, input, select, textarea {
+  font-family: sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+a {
+  background: transparent;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b, strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+q:before, q:after {
+  content: '';
+  content: none;
+}
+small {
+  font-size: 80%;
+}
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+}
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+button, input {
+  line-height: normal;
+}
+button, select {
+  text-transform: none;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled], input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+.right, .alignright {
+  float: right;
+}
+.left, .alignleft {
+  float: left;
+}
+.aligncenter {
+  margin: 0 auto;
+  display: block;
+}
+.clear {
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+}
+.stylegravy-logo-wrapper img {
+  width: 296px;
+  height: 149px;
+  display: block;
+  margin: 20px auto 0;
+}
+#menu-trigger {
+  width: 100%;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  padding: 15px 0;
+}
+.breakpoint-desktop #menu-trigger {
+  display: none;
+}
+#menu-trigger .fa-bars {
+  padding-right: 5px;
+}
+#header-menu {
+  display: none;
+}
+.breakpoint-desktop #header-menu {
+  display: block;
+}
+span.fa-bars {
+  font-size: 2em;
+  /* desktop */
+}
+ul#menu-main-menu {
+  width: 100%;
+  padding-left: 0;
+  font-family: "museo-slab", serif;
+}
+.breakpoint-desktop ul#menu-main-menu {
+  width: 960px;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin: 25px 0;
+}
+ul#menu-main-menu li {
+  padding: 15px 0;
+  list-style-type: none;
+  text-align: center;
+}
+.breakpoint-desktop ul#menu-main-menu li {
+  display: inline-block;
+  padding: 0 55px 0 0;
+  text-align: left;
+}
+ul#menu-main-menu li a {
+  color: #000;
+}
+.breakpoint-desktop ul#menu-main-menu #menu-main-menu li:last-child {
+  padding-right: 0;
+}
+.breakpoint-desktop ul#menu-main-menu #menu-main-menu li a:hover {
+  color: #999;
+}
+.section {
+  width: 100%;
+}
+.section-inner {
+  width: 960px;
+  margin: 0 auto;
+}
+a, a:visited {
+  text-decoration: none;
+  /* =============================================================================
+   Slideshow
+   ========================================================================== */
+  /* =============================================================================
+   Homepage Exclusive Styles
+   ========================================================================== */
+}
+.home-content {
+  padding: 25px 0;
+}
+.home-content .page-content {
+  text-align: center;
+  /* =============================================================================
+   Content
+   ========================================================================== */
+}
+.section {
+  width: 100%;
+}
+.breakpoint-desktop .section {
+  margin: 0 auto;
+}
+.section-inner {
+  width: 100%;
+  margin: 0 auto;
+  /* .slider-image {width: 100%; height: 300px; background-color: #666; } */
+}
+.breakpoint-desktop .section-inner {
+  width: 960px;
+}
+h2.greeting {
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+}
+.page-content {
+  padding: 0 20px;
+}
+.breakpoint-desktop .journal-wrapper {
+  padding: 0 15px;
+}
+.journal {
+  padding: 30px 0;
+  border-top: 1px solid #666;
+}
+.breakpoint-desktop .journal {
+  width: 960px;
+}
+.journal-entry {
+  width: 100%;
+  padding: 25px;
+}
+.breakpoint-desktop .journal-entry {
+  width: 425px;
+  float: left;
+  margin-right: 75px;
+}
+.breakpoint-desktop .journal-entry:last-child {
+  margin: 0;
+}
+h2.page-title {
+  text-align: center;
+}
+.breakpoint-desktop .page-wrapper {
+  width: 650px;
+  float: left;
+  margin-right: 50px;
+}
+.sidebar {
+  /* =============================================================================
+   Sidebar
+   ========================================================================== */
+  /* =============================================================================
+   Contact Form
+   ========================================================================== */
+}
+.breakpoint-desktop .sidebar {
+  width: 260px;
+  float: left;
+}
+.breakpoint-desktop .sidebar ul {
+  text-align: left;
+}
+.breakpoint-desktop .sidebar ul li {
+  padding-left: 15px;
+}
+.sidebar ul {
+  text-align: center;
+  padding-left: 0;
+}
+.sidebar ul li {
+  list-style-type: none;
+  margin: 0 0 5px 0;
+}
+.sidebar ul li a {
+  color: #666;
+}
+.page-id-17 h2.page-title {
+  text-align: center;
+}
+.gform_wrapper .gform_footer input[type=submit] {
+  color: #fff;
+  background-color: #000;
+  padding: 15px 10px 12px 10px;
+  border: none;
+  /* =============================================================================
+  Helpers
+   ========================================================================== */
+}
+.section .footer {
+  padding-top: 25px;
+  border-top: 1px solid #000;
+  margin-top: 25px;
+}
+.footer-sub {
+  font-family: "museo-slab", serif;
+}
+.footer-sub ul {
+  text-align: center;
+  margin: 15px 0;
+  padding-left: 0;
+}
+.breakpoint-desktop .footer-sub ul {
+  width: 960px;
+}
+.footer-sub ul li {
+  display: inline-block;
+  text-align: center;
+  margin-right: 15px;
+}
+.footer-sub ul li a {
+  color: #000;
+}
+.copyright-notice {
+  text-align: center;
+}
+.footer-sub ul li a {
+  /* desktop */
+}
+.breakpoint-desktop .footer-sub ul li:last-child {
+  margin-right: 0;
+}
+.breakpoint-desktop .footer-sub ul li a:hover {
+  color: #333;
+}
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  *line-height: 0;
+}
+.ir br {
+  display: none;
+  /* Hide from both screenreaders and browsers: h5bp.com/u */
+}
+.hidden {
+  display: none !important;
+  visibility: hidden;
+  /* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  /* Hide visually and from screenreaders, but maintain layout */
+}
+.invisible {
+  visibility: hidden;
+  /* Contain floats: h5bp.com/q */
+}
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+    /* Black prints faster: h5bp.com/s */
+  }
+  a, a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+    /* Don't show links for images, or javascript/internal links */
+  }
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+  tr, img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}

@@ -1,0 +1,43 @@
+.section .footer {padding-top: 25px; border-top: 1px solid #000; margin-top: 25px; }
+
+.footer-sub {
+	font-family: "museo-slab",serif;
+	ul {
+		text-align: center;
+		margin: 15px 0;
+		padding-left: 0;
+		.breakpoint-desktop & {
+		width: 960px;} 	
+		li {
+			display: inline-block;
+			text-align: center;
+			margin-right: 15px;
+			a {
+				color: #000;
+			}
+		}
+	}
+}
+
+
+
+.copyright-notice {text-align: center;}
+
+.footer-sub ul {}
+.footer-sub ul li a {}
+
+
+
+
+/* desktop */
+
+.footer-sub ul li:last-child {
+	.breakpoint-desktop & {
+	margin-right: 0;}
+}	
+
+.footer-sub ul li a:hover {
+	.breakpoint-desktop & {
+		color: #333;
+	}
+}	

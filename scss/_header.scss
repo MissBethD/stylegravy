@@ -1,0 +1,78 @@
+.stylegravy-logo-wrapper img {
+	width: 296px;
+	height: 149px;
+	display: block;
+	margin: 20px auto 0;
+}
+ 
+#menu-trigger {
+	width: 100%;
+	color: #666;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	display: block;
+	padding: 15px 0;
+	.breakpoint-desktop & {
+		display: none;
+	}
+}
+
+
+#menu-trigger .fa-bars {padding-right: 5px;}
+
+#header-menu {
+	display: none;
+	.breakpoint-desktop & {
+		display: block;
+	}
+}
+
+span.fa-bars {font-size: 2em;}
+
+/* desktop */
+
+
+ul#menu-main-menu {
+	width: 100%;
+	padding-left: 0;
+			font-family: "museo-slab",serif;
+
+		.breakpoint-desktop & {
+		width: 960px;
+		text-align: center;
+		padding: 15px 0;
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+		margin: 25px 0;
+		}
+			li {
+			padding: 15px 0;
+			list-style-type: none;
+			text-align: center;
+			.breakpoint-desktop & {
+				display: inline-block;
+				padding: 0 55px 0 0;
+				text-align: left;
+			}
+				a {
+					color: #000;
+				}
+}
+
+
+
+	
+#menu-main-menu li:last-child {
+	.breakpoint-desktop & {
+		padding-right: 0;
+		}
+}
+	
+#menu-main-menu li a:hover {
+	.breakpoint-desktop & {
+		color: #999;
+	}
+}
+
+}
